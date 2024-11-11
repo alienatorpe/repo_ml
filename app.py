@@ -44,7 +44,7 @@ if st.button('Predecir el precio'):
                     columns=['Inches','Cpu','Ram', 'Weight','Screen_width', 'Screen_height','TypeName_2 in 1 Convertible','TypeName_Gaming', 'TypeName_Netbook', 'TypeName_Notebook', 'TypeName_Ultrabook', 'TypeName_Workstation','HDD', 'SSD','FlashStorage', 'HDDExtra'])
 
     # Realizar predicción
-    prediction = modelo.predict(input_scaled)
+    prediction = modelo.predict(input_data)
 
     # Mostrar predicción
     st.write(f'Precio predecido: {prediction[0]:.2f} euros')
