@@ -40,7 +40,7 @@ type_workst = 1 if type_workst == 'Sí' else 0
 if st.button('Predecir el precio'):
     # Crear DataFrame con las entradas
   
-    input_data = pd.DataFrame([[inches,ghz,ram,peso,screen_width, screen_height, type_2en1, type_gaming, type_netbook, type_notebook, type_ultrab, type_workst]],
+    input_data = pd.DataFrame([[inches,ghz,ram,peso,screen_width, screen_height, type_2en1, type_gaming, type_netbook, type_notebook, type_ultrab, type_workst, hdd, ssd, flashstorage, hddextra]],
                     columns=['Inches','Cpu','Ram', 'Weight','Screen_width', 'Screen_height','TypeName_2 in 1 Convertible','TypeName_Gaming', 'TypeName_Netbook', 'TypeName_Notebook', 'TypeName_Ultrabook', 'TypeName_Workstation','HDD', 'SSD','FlashStorage', 'HDDExtra'])
 
     # Realizar predicción
